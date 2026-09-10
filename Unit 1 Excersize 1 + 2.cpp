@@ -19,8 +19,8 @@ int main() {
 
     printf("|-------------------------------|\n");
     printf("|Name: %-25s|\n", fullName.c_str());
-    printf("|Section: %-25c|\n", section);
+    printf("|Section: %-22c|\n", section);
     printf("|Seat: %-25.3d|\n", seatNumber);
-    printf("|Price: $%-25d|\n", 83);
+    printf("|Price: $%-23d|\n", 83);
     printf("|-------------------------------|\n");
 }
