@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
+#include <cstdio>
 using namespace std;
 
-int main() 
-{
+int main() {
     string fullName;
     char section;
     int seatNumber;
@@ -17,10 +17,10 @@ int main()
     cout << "Enter a seat number (1-200): ";
     cin >> seatNumber;
 
-    cout << "|------------------------------------|" << endl;
-    cout << "|Name: " << fullName << endl;
-    cout << "|Section: " << section << endl;
-    cout << "|Seat: " << seatNumber << endl;
-    cout << "|Price: $83" << endl;
-    cout << "|------------------------------------|" << endl;
+    printf("|-------------------------------|\n");
+    printf("|Name: %-25s|\n", fullName.c_str());
+    printf("|Section: %-25c|\n", section);
+    printf("|Seat: %-25.3d|\n", seatNumber);
+    printf("|Price: $%-25d|\n", 83);
+    printf("|-------------------------------|\n");
 }
