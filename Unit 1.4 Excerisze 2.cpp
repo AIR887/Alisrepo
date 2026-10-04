@@ -7,7 +7,7 @@ int main()
     string word;
     bool palindrome;
 
-    cout << "Enter a string:\n";
+    cout << "Enter a word:\n";
     getline(cin, word);
 
     for (int i = 0; i < word.size(); i++)
